@@ -3,20 +3,17 @@ package it.polito.tdp.librettovoti.model;
 import java.time.LocalDate;
 
 public class TestLibretto {
-
+	/*Libretto e Voto per me umano hanno un significato diverso, per il complilatore sono entrambi degli oggetti: 
+	in quanto tali sono descritti dalle rispettive classi e devono essere istanziati(concretizzati) nel main
+	*/
 	public static void main(String[] args) {
-		
-		System.out.println("Test metodi di Libretto");
-		// creo il libretto all'interno del quale mettere i voti
 		Libretto libretto = new Libretto();
-		// creo un voto
-		Voto voto1 = new Voto("Analisi 1", 30, LocalDate.of(2019, 2, 15));
-		// dovrò fornire la classe libretto di un metodo che permette di aggiungere dei
-		// voti
-		libretto.add(voto1);// aggiungo un metodo add in Libretto
-		libretto.add(new Voto("Fisica1", 28, LocalDate.of(2019, 7, 15)));
-		libretto.add(new Voto("Informatica", 24, LocalDate.of(2019, 9, 15)));
+		Voto v1 = new Voto("Analisi 1", 25, LocalDate.of(2019,03,03));
+		Voto v2 = new Voto("Fisica 1", 26, LocalDate.of(2019,03,13));
+		Voto v3 = new Voto("Algebra", 29, LocalDate.of(2019,03,23));
 		
-		System.out.println(libretto);
+		libretto.add(v1);
+		libretto.add(v2); 
+		libretto.add(v3);
 	}
 }
