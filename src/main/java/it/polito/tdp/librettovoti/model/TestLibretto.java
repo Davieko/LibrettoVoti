@@ -11,9 +11,16 @@ public class TestLibretto {
 		Voto v1 = new Voto("Analisi 1", 25, LocalDate.of(2019,03,03));
 		Voto v2 = new Voto("Fisica 1", 26, LocalDate.of(2019,03,13));
 		Voto v3 = new Voto("Algebra", 29, LocalDate.of(2019,03,23));
+		Voto v4 = new Voto("Chimica", 24, LocalDate.of(2019, 03,13));
+		Voto v5 = new Voto("Chimica", 30, LocalDate.of(2019, 03, 23));
 		
 		libretto.add(v1);
 		libretto.add(v2); 
 		libretto.add(v3);
+		
+		libretto.stampaEsameDatoVoto(25);
+		libretto.stampaEsameDatoNome("Fisica 1");
+		libretto.controllaEsistenza(v4);
+		libretto.controllaConflitto(v5);
 	}
 }

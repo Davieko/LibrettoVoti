@@ -40,6 +40,9 @@ public class Voto {
 	public void setVoto(int _voto) 						{ this.voto = _voto; }
 	public void setDataEsame(LocalDate _dataEsame)		{ this.dataEsame = _dataEsame; }
 	
-	
-	
+	@Override
+	public String toString() {
+		String v = "Esame: "+this.getNomeCorso()+" Voto: "+this.getVoto()+" Data: "+this.getDataEsame().toString();
+		return v;
+	}
 }
