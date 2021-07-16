@@ -123,7 +123,7 @@ public class Libretto {
 			return false ;
 
 	}
-		
+	
 	public String toString() {
 		String s = "" ;
 		for(Voto v: this.voti) {
